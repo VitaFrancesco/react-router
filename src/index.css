@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: calc(100vh - 39.2px);
+  background-color: antiquewhite;
+}
+
+.active {
+  color: gray;
+  border-bottom: 1px solid gray;
+  cursor: default;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
