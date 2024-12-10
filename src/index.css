@@ -41,3 +41,19 @@ footer {
   text-align: center;
   padding: 25px;
 }
+
+.container {
+  max-width: 610px;
+  margin: auto;
+  padding: 0 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main {
+  background-color: antiquewhite;
+  padding: 30px 0;
+}

@@ -12,10 +12,15 @@ function App() {
         <Route element={<DefaultLayout />} >
           <Route path="/" index element={<HomePage />} />
           <Route path="/chi siamo" element={<AboutUs />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog">
+            <Route index element={<Blog />} />
+            <Route path=":key" />
+
+          </Route>
+
         </Route>
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter >
   )
 }
 
