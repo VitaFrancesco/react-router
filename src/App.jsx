@@ -4,6 +4,7 @@ import DefaultLayout from "./layouts/DefaultLayout"
 import HomePage from "./pages/HomePage";
 import AboutUs from "./pages/AboutUs";
 import Blog from "./pages/Blog";
+import SinglePost from "./pages/SinglePost"
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <Route path="/chi siamo" element={<AboutUs />} />
           <Route path="/blog">
             <Route index element={<Blog />} />
-            <Route path=":key" />
+            <Route path=":key" element={<SinglePost />} />
 
           </Route>
 

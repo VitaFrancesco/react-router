@@ -1,4 +1,5 @@
 import style from './Card.module.css';
+import { Link } from 'react-router-dom';
 // import ReactDOM from 'react-dom'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -15,11 +16,14 @@ export default function Card(props) {
                 <h2>{props.title}</h2>
                 <div className={style.tags}>
                     {
+                        props.tags &&
                         props.tags.map((tag, i) => <div key={i} className={style[tag]}>{tag}</div>)
                     }
                 </div>
                 <p>{props.content}</p>
-                <button>Leggi di più</button>
+                <Link to={`/blog/${props.id}`} >
+                    <button>Leggi di più</button>
+                </Link>
             </div>
             <div className={style.delete} onClick={props.deleteArt}>
                 {/* <FontAwesomeIcon icon="fa-solid fa-trash" /> */}
